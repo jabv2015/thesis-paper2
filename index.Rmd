@@ -226,7 +226,7 @@ class: inverse, center, middle
 </center>
 
 ---
-
+<br>
 <center>
 <img src="images/rts.png">
 </center>
