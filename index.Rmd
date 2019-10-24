@@ -201,7 +201,7 @@ class: inverse, center, middle
 ## Descriptive Statistics DEA variables
 
 <center>
-<img src="images/input_outputs.png">
+<img src="images/input_outputs.png" >
 </center>
 
 ---
@@ -232,9 +232,9 @@ class: inverse, center, middle
 </center>
 
 ---
-
+<br>
 <center>
-<img src="images/es.png">
+<img src="images/es.png" width="80%">
 </center>
 
 ---
