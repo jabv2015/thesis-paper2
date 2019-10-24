@@ -2,7 +2,7 @@
 title: "Assessing and Explaining <br> Local Government Efficiency <br> in Natural Resource Rich Countries:"
 subtitle: "The case of Chilean Municipalities <br> <br> <font size='6'>Javier Beltran^[] <br> 01-11-2019</font>"
 author: "<sup>1</sup> E-Mail: jbeltran2006@gmail.com"
-date: "<br> Slides: https://jabv2015.github.io/inequality-NRD-paper/ </a>"
+date: "<br> Slides: https://jabv2015.github.io/thesis-paper2/ </a>"
 output:
   xaringan::moon_reader:
     lib_dir: libs
