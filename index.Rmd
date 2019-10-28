@@ -301,7 +301,7 @@ class: center
 ## Evolution Efficiency Scores by Zone (Full Period) 
 
 <center>
-<img src="images/es_evol.png" width = "90%">
+<img src="images/es_evol.png" width = "80%">
 </center>
 
 ---
