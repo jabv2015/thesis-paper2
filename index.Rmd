@@ -279,7 +279,7 @@ class: center
 ## Results: Returns to Scale by Zone
 
 <center>
-<img src="images/rts.png">
+<img src="images/rts.png" width = "80%">
 </center>
 
 ---
