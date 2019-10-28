@@ -4,7 +4,6 @@
     <title>Measuring and Explaining   Local Government Efficiency   in Natural Resource Rich Countries:</title>
     <meta charset="utf-8" />
     <meta name="author" content="1 E-Mail: jbeltran2006@gmail.com" />
-    <link href="libs/font-awesome/css/fontawesome-all.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
   </head>
   <body>
@@ -14,7 +13,7 @@ class: center, middle, inverse, title-slide
 # Measuring and Explaining <br> Local Government Efficiency <br> in Natural Resource Rich Countries:
 ## The case of Chilean Municipalities <br> <br> <font size='6'>Javier Beltran<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a> <br> 01-11-2019</font>
 ### <sup>1</sup> E-Mail: <a href="mailto:jbeltran2006@gmail.com" class="email">jbeltran2006@gmail.com</a>
-### <br> Slides: https://jabv2015.github.io/thesis-paper2/ </a>
+### <br> Queensland University of Technology </a>
 
 ---
 
@@ -80,88 +79,66 @@ class: inverse, center, middle
 
 ---
 
-### Theoretical framework
-
-&gt; Pursuing equality can reduce efficiency (the total output produced with given resources).
-
-.center[
-&lt;i&gt; See Okun (1975) &lt;/i&gt; 
-]
+### Trade-off between efficiency and equity:
 
 --
 
-+ Consequences of *more equal distribution*:
-    + Reduce *incentives* to work and invest  
-    + Reduce efforts to redistribute 
++ Pursuing equality can reduce efficiency (see Okun 1975; Browning &amp; Johnson 1984; Andersen &amp; Maibom 2016)   
 
 --
 
-&gt; ...when growth is looked at over the long term, the trade-off between efficiency and equality may not exist. In fact equality appears to be an important ingredient in promoting and sustaining growth.
-
-.center[
-&lt;i&gt; See Berg &amp; Ostry (2011) &lt;/i&gt; 
-]
++ But, equality could also be an important ingredient in promoting and sustaining growth (see Berg &amp; Ostry 2011; kumhof, Rancière &amp; Winant 2015)
 
 --
 
-&gt; ...increased gaps in income have led to increased household debt ratios...The only way of sustainably minimising this debt is to reduce income inequality...if income gaps are not reduced, the next crisis will happen as surely as autumn follows summer.
-
-.center[
-&lt;i&gt; Kumhof, Michael. IMF economist: Crisis begins with inequality. Interview by Mikael Feldbaum. https://www.eurozine.com, 9 March 2012. &lt;/i&gt; 
-]
-
----
-
-## Evidence on Local Government Efficiency (LGE)
+### Local Government Efficiency (LGE): The interest has been on:
 
 --
 
-The interest has been on:
-
-### Measuring LGE <i class="fas  fa-check "></i>
-
---
+.pull-left[
+#### Measuring LGE
 
 + Parametric (SFA) vs non-parametric (DEA) measurement techniques 
 + Provision of single services vs overall efficiency
 + Selection of inputs and outputs (outcomes)
 + Input oriented vs output oriented approach
+]
 
 --
-
-### Explaining differences in LGE  <i class="fas  fa-check "></i>
+.pull-right[
+#### Explaining differences in LGE
 
 + Discretionary factors (associated with the measurement process)
 
---
-
 + Non-discretionary (contextual) factors
   + Economic - Financial
-  + Socio - Demographic
-  + Geographic
+  + Social - Demographic - Geographic
   + Political - Institutional
-
+]
 ---
 
-## How income inequality has been treated?
+## Hypotheses
+
+### About the level of inefficiency of Chilean municipalities
+
+&gt; Chilean municipalities show an average level of inefficiency of 30%.
+
+.right[
+&lt;i&gt;See Pacheco, Sanchez &amp; Villena, 2013&lt;/i&gt;
+]
 
 --
 
-* As an **Output** in the process of measuring efficiency, particularly for the case of European and OECD countries (Afonso, Schuknecht, &amp; Tanzi, 2010; Antonelli &amp; De Bonis, 2018)
+### About the relationship between LGE and income inequality 
+
+&gt; `\(H_0\)`: Higher income inequality could negatively affect municipal efficiency.
+
+.right[
+&lt;i&gt;See Tandon ,2005; Jottier, Ashworth, &amp; Heyndels, 2012; Ortega, Sanjuán, &amp; Casquero, 2017&lt;/i&gt;]
 
 --
 
-* As a **Contextual Factor**: 
-
-  + In cross-country comparisons: For instance, more unequal (developing) countries could have higher difficulties to achieve specific health outcomes (Ortega, 2017)
-
-  + At the local level (within specific countries): 
-
---
-
-      - Higher income inequality could negatively affect municipal efficiency due to competing requirements associated with a more complex set of public services in more unequal municipalities (Jottier, Ashworth, &amp; Heyndels, 2012)
-
-      - When progress is not evenly shared, a persistent within country inequity reduces the effectiveness and efficiency of the public sector (Ortega, Sanjuán, &amp; Casquero, 2017; Tandon, 2005).
+&gt; `\(H_1\)`: Income inequality does not have a significant association with municipal efficiency
 
 ---
 
@@ -173,18 +150,26 @@ class: inverse, center, middle
 
 ---
 
-### Data
+## Data
 
-&gt; Sample of 324 municipalities
+--
 
-**Inputs - Output Data used to measure LGE**  
+- Sample of 324 municipalities
+
+--
+
+### Inputs - Output Data used to measure LGE  
+
+--
 
 + National System of Municipal Information, SINIM (2006-2017)
 + In total 3888 observations
 
 --
 
-**County-Level Data on Contextual Factors**
+### County-Level Data on Contextual Factors
+
+--
 
 + National Socioeconomic Characterization Survey, CASEN (2006 - 2009 - 2011 - 2013 - 2015 - 2017)  
 + SINIM
@@ -194,7 +179,54 @@ class: inverse, center, middle
 
 ---
 
-## Descriptive Statistics DEA variables
+## Methodology: Two Stage Approach
+
+--
+
+### First Stage: DEA analysis
+
+--
+
++ Input oriented assuming variable returns to scale
++ Result: A vector of **efficiency scores (ES)** for each municipality
+
+--
+
+### Second Stage: Regression Analysis
+
+--
+
++  **Dependent variable**: DEA efficiency scores 
+
+--
+
++ **Independent variables**: 
+  + Measure of Income inequality + Remaining contextual factors
+  + County (zone) specific + time effects
+
+--
+
++ **Estimation method**: Censored regression + Instrumental Variable (IV)
+
+--
+
++ **Proposed Instrument**: 
+
+`$$pss\_firms = \frac{\text{Number of firms in primary sector}}{\text{Total number of firms}}$$`
+
+---
+
+## Inputs and Outputs used in DEA: Summary Statistics
+
+--
+
++ All monetary data is in Chilean pesos of 2017
+
+--
+
++ All indicators in per capita terms
+
+--
 
 &lt;center&gt;
 &lt;img src="images/input_outputs.png" &gt;
@@ -202,10 +234,10 @@ class: inverse, center, middle
 
 ---
 
-## Descriptive Statistics Contextual Factors
+## Correlation Matrix Numeric Contextual Factors
 
 &lt;center&gt;
-&lt;img src="images/env_factors.png"&gt;
+&lt;img src="images/cor_matrix.png"&gt;
 &lt;/center&gt;
 
 ---
@@ -213,7 +245,18 @@ class: inverse, center, middle
 class: inverse, center, middle
 
 
-## Analysis &amp; Results
+# Analysis &amp; Results
+
+---
+
+class: inverse, center, middle
+
+
+# First Stage: 
+
+&lt;br&gt;
+
+#DEA
 
 ---
 class: center
@@ -235,10 +278,15 @@ class: center
 ---
 class: center
 
-## Efficiency Scores by Zone and Region 
-&lt;center&gt;
-&lt;img src="images/es.png" width="70%"&gt;
-&lt;/center&gt;
+### Efficiency Scores by Zone and Region 
+
+.pull-left[
+&lt;img src="images/es.png"&gt;
+]
+
+.pull-right[
+&lt;img src="images/chilean_municipalities.gif" width = "75%"&gt;
+]
 
 ---
 class: center
@@ -248,6 +296,17 @@ class: center
 &lt;center&gt;
 &lt;img src="images/es_evol.png" width = "90%"&gt;
 &lt;/center&gt;
+
+---
+
+class: inverse, center, middle
+
+
+# Second Stage: 
+
+&lt;br&gt;
+
+# Regression Analysis
 
 ---
 class: center
@@ -308,11 +367,7 @@ class: inverse, center, middle
 
 --
 
-- Results highly sensitive to measurement technique
-
---
-
-- External validity
+- Results sensitive to the selection and number of inputs and outputs (External validity)
 
 --
 
@@ -324,9 +379,7 @@ class: inverse, center, middle
 
 --
 
-- To get more causal relationships: 
-  + Program evaluation in RCT municipalities.
-  + Group municipalities based in some characteristic such as population and conduct RDD.
+- Program evaluation in Chilean municipalities (for instance, assigning municipalities to "treatment" using as running variable county population or the level of income percapita)
 
 --
 
@@ -353,20 +406,6 @@ class:center
 
 &lt;center&gt;
 &lt;img src="images/EF.map.png" width = "90%"&gt;
-&lt;/center&gt;
----
-class:center
-### Appendix 3: Efficiency Status by Year
-
-&lt;center&gt;
-&lt;img src="images/status_six.png" width = "80%"&gt;
-&lt;/center&gt;
-
----
-class:center
-
-&lt;center&gt;
-&lt;img src="images/chilean_municipalities.gif" width = "45%"&gt;
 &lt;/center&gt;
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
