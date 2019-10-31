@@ -178,6 +178,15 @@ class: inverse, center, middle
 + in total 1944 observations
 
 ---
+class: center
+### Chile: Geographic and Regional Administrative Division 
+
+&lt;center&gt;
+&lt;img src="images/maps.png" width = "80%"&gt;
+&lt;/center&gt;
+
+[es](#es-evolution)
+---
 
 ## Methodology: Two Stage Approach
 
@@ -216,32 +225,6 @@ class: inverse, center, middle
 
 ---
 
-## Inputs and Outputs used in DEA: Summary Statistics
-
---
-
-+ All monetary data is in Chilean pesos of 2017
-
---
-
-+ All indicators in per capita terms
-
---
-
-&lt;center&gt;
-&lt;img src="images/input_outputs.png" &gt;
-&lt;/center&gt;
-
----
-
-## Correlation Matrix Numeric Contextual Factors
-
-&lt;center&gt;
-&lt;img src="images/cor_matrix.png"&gt;
-&lt;/center&gt;
-
----
-
 class: inverse, center, middle
 
 
@@ -259,12 +242,24 @@ class: inverse, center, middle
 #DEA
 
 ---
-class: center
-### Chile: Geographic and Regional Administrative Division 
+name: dea-inputs-outputs
+## Inputs and Outputs used in DEA: Summary Statistics
+
+--
+
++ All monetary data is in Chilean pesos of 2017
+
+--
+
++ All indicators in per capita terms
+
+--
 
 &lt;center&gt;
-&lt;img src="images/maps.png" width = "80%"&gt;
+&lt;img src="images/input_outputs.png" &gt;
 &lt;/center&gt;
+
+[Appendix 1](#appendix1)
 
 ---
 class: center
@@ -276,9 +271,10 @@ class: center
 &lt;/center&gt;
 
 ---
+name: es
 class: center
 
-## Efficiency Scores by Zone and Region 
+## Efficiency Scores by Zone and Region ([gini](#gini))
 
 .pull-left[
 &lt;img src="images/es.png"&gt;
@@ -289,6 +285,7 @@ class: center
 ]
 
 ---
+name: es-evolution
 class: center
 
 ## Evolution Efficiency Scores by Zone (Full Period) 
@@ -296,6 +293,8 @@ class: center
 &lt;center&gt;
 &lt;img src="images/es_evol.png" width = "80%"&gt;
 &lt;/center&gt;
+
+[geo](#geo)
 
 ---
 
@@ -309,12 +308,51 @@ class: inverse, center, middle
 # Regression Analysis
 
 ---
+# The model
+
+To test our hypothesis, the empirical model is defined as:  
+&lt;br&gt;
+
+`\begin{equation}
+\theta_{it} = \beta_1 gini_{it}+ Z_{it}\beta + \delta_{t} + \alpha_{i}+\epsilon_{it}
+\end{equation}`
+
+Where: 
+
+- `\(\theta_{it}\)` is the vector of efficiency scores from the DEA analysis, 
+
+- `\(gini_{it}\)` is the Gini coefficient of each county, 
+
+- `\(Z\)` is a vector of controls.
+
+- `\(\delta_t\)` are year-specific effects, 
+
+- `\(\alpha_i\)` are municipality-specific constants, 
+
+- `\(\epsilon_{it}\)` is a vector of error terms and 
+
+---
+### Contextual Factors: Summary Statistics
+
+&lt;center&gt;
+&lt;img src="images/env_factors.png"&gt;
+&lt;/center&gt;
+
+---
 class: center
 
 ### Model Comparisons - Censored Cross-sectional regressions
 
 &lt;center&gt;
 &lt;img src="images/cross_sectional.png"&gt;
+&lt;/center&gt;
+
+---
+class: center
+
+### Model Comparisons - Panel Data
+&lt;center&gt;
+&lt;img src="images/panel_full.png" width = "60%"&gt;
 &lt;/center&gt;
 
 ---
@@ -341,9 +379,8 @@ class: inverse, center, middle
 
 --
 
-+ The "production function" of municipalities can be described by one showing variable returns to scale.
-+ About 3/4 of municipalities shows some degree of ineficiency.
-+ The average level of inefficiency is 17%, with higher levels in the Centre area of the country and lower levels in the South.
++ The "production function" of municipalities shows variable returns to scale.
++ The average level of inefficiency is 17%, with higher levels in the South area of the country.
 + Efficiency shows a ciclical behaviour and, on average, has remained stable in the period 2006 - 2017.
 
 --
@@ -352,8 +389,7 @@ class: inverse, center, middle
 
 --
 
-&gt; This paper offers empirical **evidence of a negative relationship
-between inequality and efficiency**, that is, a reduction of income inequality (or an increase in equality) could have positive effects on economic efficiency, at least at the level of local governments.
+&gt; This paper offers empirical **evidence of a negative relationship between inequality and efficiency**, that is, a reduction of income inequality (or an increase in equality) could have positive effects on economic efficiency, at least at the level of local governments.
 
 
 ---
@@ -367,11 +403,11 @@ class: inverse, center, middle
 
 --
 
-- Results sensitive to the selection and number of inputs and outputs (External validity)
+- Results sensitive to the selection and number of inputs and outputs
 
 --
 
-- Associated with observational data and causal inference
+- Associated with observational data and the interpretation of results as causal relationships.
 
 --
 
@@ -379,26 +415,51 @@ class: inverse, center, middle
 
 --
 
-- Program evaluation in Chilean municipalities (for instance, assigning municipalities to "treatment" using as running variable county population or the level of income percapita)
+- Include some output capturing the quality in the provision of public services
+
+--
+
+- Alternatives IV´s (?)
+
+--
+
+- Program evaluation in Chilean municipalities
+
+--
+
+- Modelling spatial dependence-heterogeneity in LGE.
 
 --
 
 - Given the current situation of the country: What about the issue of **reverse causality?**
 
 ---
+class: inverse, center, middle
+
+# "If income gaps are not reduced, the next crisis will happen as surely as autumn follows summer"
+
+.right[&lt;i&gt;An interview with Michael Kumhof by Mikael Feldbaum, https://www.eurozine.com, 2012&lt;/i&gt;]
+
+---
+
+background-image: url(images/MARCHA.jpg)
+background-size: cover
 
 class: inverse, center, middle
 
+# Thanks for Listening!
 
-## Thanks for Listening!
+# Questions?
 
 ---
+name: appendix1
 class:center
 ### Appendix 1: Inputs and Outputs for DEA
-
+[back to DEA inputs and outputs](#dea-inputs-outputs)
 &lt;center&gt;
 &lt;img src="images/LGE.map.png"&gt;
 &lt;/center&gt;
+
 
 ---
 class:center
@@ -407,6 +468,22 @@ class:center
 &lt;center&gt;
 &lt;img src="images/EF.map.png" width = "90%"&gt;
 &lt;/center&gt;
+
+---
+
+## Correlation Matrix Numeric Contextual Factors
+
+&lt;center&gt;
+&lt;img src="images/cor_matrix.png"&gt;
+&lt;/center&gt;
+
+---
+name: gini
+class:center
+### Quantile map Gini (2017) ([es](#es))
+
+
+![](images/gini_2017.png)
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
